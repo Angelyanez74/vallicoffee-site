@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vallicoffee - Café de Altura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <span class="nav-brand">Vallicoffee</span>
+    <nav>
+      <a href="#about" class="lang" data-es="El Café" data-de="Der Kaffee">El Café</a>
+      <a href="#special" class="lang" data-es="¿Por qué especial?" data-de="Warum besonders?">¿Por qué especial?</a>
+      <a href="#productos" class="lang" data-es="Productos" data-de="Produkte">Productos</a>
+      <a href="#contacto" class="lang" data-es="Contacto" data-de="Kontakt">Contacto</a>
+      <select id="language">
+        <option value="es">ES</option>
+        <option value="de">DE</option>
+      </select>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="lang" data-es="El sabor de los Andes en tu taza ☕" data-de="Der Geschmack der Anden in Ihrer Tasse ☕">El sabor de los Andes en tu taza ☕</h1>
+    <p class="lang" data-es="Café producido en la cuenca alta del Marañón, Reserva de Biosfera Podocarpus-El Cóndor, Valladolid, Palanda, Ecuador." 
+       data-de="Kaffee aus dem Oberlauf des Marañón, Biosphärenreservat Podocarpus-El Cóndor, Valladolid, Palanda, Ecuador.">
+       Café producido en la cuenca alta del Marañón, Reserva de Biosfera Podocarpus-El Cóndor, Valladolid, Palanda, Ecuador.
+    </p>
+    <img src="images/tu-foto-cafe.jpg" alt="Café ecuatoriano">
+  </section>
+
+  <section id="about">
+    <h2 class="lang" data-es="Sobre nuestro café" data-de="Über unseren Kaffee">Sobre nuestro café</h2>
+    <p class="lang" data-es="Elaborado a 1.600 m de altura, cultivado de manera sostenible y con aroma único." data-de="Auf 1.600 m Höhe hergestellt, nachhaltig angebaut und einzigartig im Aroma.">
+      Elaborado a 1.600 m de altura, cultivado de manera sostenible y con aroma único.
+    </p>
+  </section>
+
+  <section id="special">
+    <h2 class="lang" data-es="¿Por qué es especial?" data-de="Warum ist er besonders?">¿Por qué es especial?</h2>
+    <ul>
+      <li class="lang" data-es="Aroma floral y frutal" data-de="Blumiges und fruchtiges Aroma">Aroma floral y frutal</li>
+      <li class="lang" data-es="Cosecha manual" data-de="Handgeerntet">Cosecha manual</li>
+      <li class="lang" data-es="Apoyo a productores locales" data-de="Unterstützung lokaler Produzenten">Apoyo a productores locales</li>
+    </ul>
+  </section>
+
+  <section id="productos">
+    <h2 class="lang" data-es="Nuestros productos" data-de="Unsere Produkte">Nuestros productos</h2>
+    <div class="product">
+      <img src="images/cafe1.jpg" alt="Café grano 250g">
+      <h3 class="lang" data-es="Café en grano 250g" data-de="Bohnenkaffee 250g">Café en grano 250g</h3>
+      <p>$7,50</p>
+      <button onclick="addToCart('Café en grano 250g', 7.5)">Comprar</button>
+    </div>
+    <div class="product">
+      <img src="images/cafe2.jpg" alt="Café molido 250g">
+      <h3 class="lang" data-es="Café molido 250g" data-de="Gemahlener Kaffee 250g">Café molido 250g</h3>
+      <p>$7,50</p>
+      <button onclick="addToCart('Café molido 250g', 7.5)">Comprar</button>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Carrito de compra</h2>
+    <div id="cart-items"></div>
+    <p>Total: $<span id="total">0.00</span></p>
+    <button id="checkout-btn">Ir a pagar</button>
+  </section>
+
+  <section id="contacto">
+    <h2 class="lang" data-es="Contacto" data-de="Kontakt">Contacto</h2>
+    <p>📧 vallicoffee@gmail.com</p>
+    <p>📱 +593 99 999 9999</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Vallicoffee. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
